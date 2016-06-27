@@ -15,9 +15,23 @@ include_directories(
   ${catkin_INCLUDE_DIRS}
 )
 
-add_executable(rtimulib_ros src/rtimulib_ros.cpp)
+#add_executable(rtimulib_ros src/rtimulib_ros.cpp)
+# add_executable(mpu9255_imu_ros src/mpu9255_imu_ros.cpp)
+# add_executable(mpu9255_compass_ros src/mpu9255_compass_ros.cpp)
+add_executable(mpu9255_ros src/mpu9255_ros.cpp)
 
-target_link_libraries(rtimulib_ros
+target_link_libraries(mpu9255_ros
   ${catkin_LIBRARIES}
   RTIMULib
 )
+
+# target_link_libraries(mpu9255_imu_ros
+#   ${catkin_LIBRARIES}
+#   RTIMULib
+# )
+# 
+# 
+# target_link_libraries(mpu9255_compass_ros
+#   ${catkin_LIBRARIES}
+#   RTIMULib
+# )

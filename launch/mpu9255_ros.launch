@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<launch>
+    <node pkg="rtimulib_ros" type="mpu9255_ros" name="mpu9255_node" output="screen">
+        <param name="calibration_file_path" value="$(find rtimulib_ros)/config"/>
+        <param name="calibration_file_name" value="MPU9255" />
+        <param name="frame_id" value="imu_frame"/>
+        <param name="imu_topic_name" value="imu/data"/>
+        <param name="compass_topic_name" value="compass/data"/>
+        <param name="update_rate" value="10"/>
+    </node>
+</launch>

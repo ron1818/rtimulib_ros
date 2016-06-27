@@ -18,7 +18,7 @@
 #   9 = Bosch BMX055
 #   10 = Bosch BNX055
 #   11 = InvenSense MPU-9255
-IMUType=11
+IMUType=3
 
 # 
 # Fusion type type - 
@@ -49,7 +49,7 @@ SPISpeed=500000
 
 # 
 # I2C slave address (filled in automatically by auto discover) 
-I2CSlaveAddress=105
+I2CSlaveAddress=107
 
 # 
 # IMU axis rotation - see RTIMU.h for details
@@ -62,11 +62,11 @@ AxisRotation=0
 #   3 = LPS25H
 #   4 = MS5611
 #   5 = MS5637
-PressureType=1
+PressureType=0
 
 # 
 # I2C pressure sensor address (filled in automatically by auto discover) 
-I2CPressureAddress=93
+I2CPressureAddress=0
 
 # Humidity sensor type - 
 #   0 = Auto discover
@@ -83,13 +83,13 @@ I2CHumidityAddress=0
 # 
 
 # Compass calibration settings
-CompassCalValid=false
-CompassCalMinX=0.000000
-CompassCalMinY=0.000000
-CompassCalMinZ=0.000000
-CompassCalMaxX=0.000000
-CompassCalMaxY=0.000000
-CompassCalMaxZ=0.000000
+CompassCalValid=true
+CompassCalMinX=-65.892616
+CompassCalMinY=-41.929874
+CompassCalMinZ=-22.229315
+CompassCalMaxX=48.211563
+CompassCalMaxY=42.768635
+CompassCalMaxZ=58.158432
 
 # #####################################################################
 # 
@@ -133,9 +133,9 @@ AccelCalMaxZ=0.000000
 
 # Saved gyro bias data
 GyroBiasValid=true
-GyroBiasX=-0.017273
-GyroBiasY=-0.005737
-GyroBiasZ=0.019574
+GyroBiasX=0.071375
+GyroBiasY=0.059268
+GyroBiasZ=0.012933
 
 # #####################################################################
 # 
