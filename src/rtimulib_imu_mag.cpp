@@ -31,7 +31,7 @@
 
 int main(int argc, char **argv)
 {
-    ros::init(argc, argv, "mpu9255_node");
+    ros::init(argc, argv, "imu_mag_node");
     ROS_INFO("RTIMU driver is now running");
     ros::NodeHandle n;
     ros::NodeHandle private_n("~");
